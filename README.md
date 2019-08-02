@@ -27,10 +27,13 @@ To make sure the automatic publishing works correctly follow these initial steps
  - In GitHub press the **Use this template** button on the repository page.
  - Clone the repository on your local machine and run `yarn` to install dependencies.
  - In the `package.json` file replace `package-starter` with your project name and the rest of the information like description, author, repository, etc.
- - Commit the changes, run `npm publish` and then `git push origin master --tags`, this is important since semantic release relies on tags to know what's the next version to publish.
+ - Commit the changes, run `npm publish`, tag the release with `git tag "v0.0.0"` and then `git push origin master --tags`, this is important since semantic release relies on tags to know what's the next version to publish.
  - Go to Travis, add your project and configure an `NPM_TOKEN` and a `GITHUB_TOKEN` to allow package publishing on every push to master.
+
+Now, let conventional commit messages and semantic release to handle all the publishing for you!
+
+_Happy coding!_
 
 ## LICENSE
 
 By the default the template includes a MIT License, feel free to change it for the one that suits better the legal needs of your project.
-
