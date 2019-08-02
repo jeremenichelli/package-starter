@@ -12,11 +12,11 @@ It's important to note that the workflows are highly opinionated around my prefe
 
 This template is relying on other great open source projects to achieve normal project cycles.
 
- - For publishing it uses microbundle by Jason Miller, it provides transpiling, minification and source map generation.
- - For test it uses ava, which will detect any `.test` or `.spec` file in the project.
- - Using husky for git hooks, this template will run prettier to format files and run tests before every commit.
- - It will also check the format of your commit messages using conventional-commit, this is an important part because it will automate package publishing using continuous integration.
- - Finally, using Travis and semantic release it will generate a new version of the project on every push to master.
+ - For publishing it uses [microbundle](//github.com/developit/microbundle) by Jason Miller, it provides transpiling, minification and source map generation.
+ - For test it uses [ava](//github.com/avajs/ava), which will detect any `.test` or `.spec` file in the project.
+ - Using [husky](//github.com/typicode/husky) for git hooks, this template will run [prettier](//prettier.io) to format files and run tests before every commit.
+ - It will also check the format of your commit messages using [conventional commits spec](//www.conventionalcommits.org), this is an important part because it will automate package publishing using continuous integration.
+ - Finally, using [Travis](//travis-ci.org) and [semantic release](/github.com/semantic-release/semantic-release) it will generate a new version of the project on every push to master.
 
 _Read more about how to ensure this works correctly in the Initial Setup section._
 
