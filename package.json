@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "description": "Template repository for package maintenance and publishing ",
   "main": "dist/package-starter.js",
+  "browser": "dist/package-starter.umd.js",
+  "module": "dist/package-starter.esm.js",
   "scripts": {
     "format": "prettier ./**/*.js --write",
     "test": "ava --verbose",
